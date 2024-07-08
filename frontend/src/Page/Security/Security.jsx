@@ -4,16 +4,18 @@ import Navbar from '../../Component/Navbar/Navbar'
 import Footer from '../../Component/Footer/Footer'
 import Value from '../../Component/Value/Value'
 import Form1 from '../../Component/Form1/Form1'
-import img from '../../Assets/cloud.jpg'
-import software from '../../Assets/software-developer.jpg'
+import img from '../../Assets/Web.jpg'
+import software from '../../Assets/SEO.jpg'
 import { FiSmartphone } from "react-icons/fi";
 import Client from '../../Component/Client/Client'
 import Card from '../../Component/Card/Card'
-import banner from '../../Assets/SEC.jpg'
-import markett from '../../Assets/markett.webp'
-import Link from '../../Assets/link.jpg'
+import banner from '../../Assets/Camp.webp'
+import Service from '../../Assets/Service.jpg'
+import markett from '../../Assets/Social.jpg'
+import Link from '../../Assets/Link.jpeg'
 import brand from '../../Assets/brand.jpg'
 
+import { Helmet } from 'react-helmet';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -25,26 +27,33 @@ function Security() {
 
     return (
         <>
-            <div style={{ position: "sticky", top: '0', zIndex: '3' }}>
+            <Helmet>
+                <title>Innovative Web Development Solutions | Growing Digital</title>
+                <meta name="description" content="Explore our wide range of digital services including web development, SEO, social media marketing, and more. Empower your brand with our innovative solutions." />
+            </Helmet>
+
+            <header style={{ position: "sticky", top: '0', zIndex: '3' }}>
                 <Navbar />
-            </div>
+            </header>
 
             <section className={style.sec}>
 
 
                 <div data-aos="fade-up" className={style.bg} >
-                    <img src={img} alt="" />
+
+                    <img src={img} alt="Web Development" />
+
                 </div>
 
                 <div data-aos="fade-down" className={style.content}>
                     <h1>
-                        WORDPRESS/WEBFLOW MAGIC
+                        WEB DEVELOPMENT
                     </h1>
                     <h2>
-                        WORDPRESS
+                        Innovative Web Development Solutions
                     </h2>
                     <p>
-                        Transform your digital presence effortlessly with WordPress and Webflow. Our expertise turns your ideas into stunning, functional websites. Experience the magic of seamless web design and development.
+                        From concept to launch, we create dynamic, responsive websites that captivate and convert. Our expert team ensures your online presence is visually stunning and functionally flawless, using the latest technologies for seamless user experiences. Transform your ideas into reality with our comprehensive web development services, empowering your brand and elevating your digital strategy.
                     </p>
 
                 </div>
@@ -74,7 +83,7 @@ function Security() {
                 </div>
 
                 <div data-aos="fade-up" className={style.bg} >
-                    <img src={software} alt="" />
+                    <img src={software} alt="SEO Alchemy" />
                 </div>
 
             </section>
@@ -86,7 +95,7 @@ function Security() {
 
 
                 <div data-aos="fade-up" className={style.bg} >
-                    <img src={banner} alt="" />
+                    <img src={banner} alt="Campaign Design" />
                 </div>
 
                 <div data-aos="fade-down" className={style.content}>
@@ -115,7 +124,7 @@ function Security() {
                         SOCIAL MEDIA MARKETING
                     </h1>
                     <h2>
-                        Experience the change
+                        Experience The Change
                     </h2>
 
                     <p>
@@ -130,7 +139,9 @@ function Security() {
                 </div>
 
                 <div data-aos="fade-up" className={style.bg} >
-                    <img src={markett} alt="" />
+
+                    <img src={markett} alt="Social Media Marketing" />
+
                 </div>
 
             </section>
@@ -140,7 +151,9 @@ function Security() {
 
 
                 <div data-aos="fade-up" className={style.bg} >
-                    <img src={Link} alt="" />
+
+                    <img src={Link} alt="LinkedIn Optimization" />
+
                 </div>
 
                 <div data-aos="fade-down" className={style.content}>
@@ -148,7 +161,7 @@ function Security() {
                         LINKEDIN OPTIMIZATION
                     </h1>
                     <h2>
-                        LinkedIn Optimization for Success
+                        LinkedIn Optimization For Success
                     </h2>
                     <p>
                         Unlock Your LinkedIn Potential
@@ -173,17 +186,28 @@ function Security() {
                     </h2>
 
                     <p>
-                        Our DaaS services redefine your digital
-                        presence: Online Reputation Management;
-                        Social Media Domination; SEO Mastery; and
-                        Content Creation Expertise
+                        Our DaaS services redefine your digital presence.
+                    </p>
+                    <p>
+                        presence Online Reputation Management.
+                    </p>
+                    <p>
+                        Social Media Domination.
+                    </p>
+                    <p>
+                        SEO Mastery.
+                    </p>
+                    <p>
+                        Content Creation Expertise.
                     </p>
 
 
                 </div>
 
                 <div data-aos="fade-up" className={style.bg} >
-                    <img src={software} alt="" />
+
+                    <img src={Service} alt="Design-As-A-Service" />
+
                 </div>
 
             </section>
@@ -193,7 +217,9 @@ function Security() {
 
 
                 <div data-aos="fade-up" className={style.bg} >
-                    <img src={brand} alt="" />
+
+                    <img src={brand} alt="Brand Building" />
+
                 </div>
 
                 <div data-aos="fade-down" className={style.content}>

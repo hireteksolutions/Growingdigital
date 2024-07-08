@@ -1,11 +1,12 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './Form1.module.css';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ReCAPTCHA from 'react-google-recaptcha';
+import { Helmet } from 'react-helmet';
 
 function Form1() {
 
@@ -24,6 +25,7 @@ function Form1() {
 
     const [form, setForm] = useState(initialState);
     const [errors, setErrors] = useState({});
+    const [captchaValid, setCaptchaValid] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -50,9 +52,14 @@ function Form1() {
         if (!form.firstName) newErrors.firstName = 'First name is required';
         if (!form.email) newErrors.email = 'Email address is required';
         else if (!/\S+@\S+\.\S+/.test(form.email)) newErrors.email = 'Email address is invalid';
-        if (form.phone && form.phone.length !== 10) newErrors.phone = 'Phone number must be 10 digits';
+        if (!form.phone) newErrors.phone = 'Phone number is required';
+        else if (form.phone.length !== 10) newErrors.phone = 'Phone number must be 10 digits';
         if (!form.message) newErrors.message = 'Message is required';
         return newErrors;
+    };
+
+    const handleCaptchaChange = (value) => {
+        setCaptchaValid(!!value);
     };
 
     const handleSubmit = async (e) => {
@@ -61,6 +68,8 @@ function Form1() {
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
             toast.error(Object.values(validationErrors).join('. '));
+        } else if (!captchaValid) {
+            toast.error('Please complete the CAPTCHA');
         } else {
             try {
                 const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/contact`, form);
@@ -78,6 +87,11 @@ function Form1() {
 
     return (
         <>
+            <Helmet>
+                <title>Contact Us Form</title>
+                <meta name="description" content="Fill out the form to get in touch with us. Provide your first name, last name, email address, phone number, and message." />
+            </Helmet>
+
             <form data-aos="fade-up" onSubmit={handleSubmit}>
                 <div className={style.Form1}>
                     <div className={style.inputGroup}>
@@ -88,6 +102,8 @@ function Form1() {
                                 name="firstName"
                                 value={form.firstName}
                                 onChange={handleChange}
+                                aria-required="true"
+                                aria-invalid={errors.firstName ? "true" : "false"}
                                 className={errors.firstName ? style.errorInput : ''}
                             />
                             {errors.firstName && <span className={style.error}>{errors.firstName}</span>}
@@ -112,17 +128,23 @@ function Form1() {
                                 value={form.email}
                                 onChange={handleChange}
                                 className={errors.email ? style.errorInput : ''}
+                                aria-required="true"
+                                aria-invalid={errors.email ? "true" : "false"}
                             />
+
                             {errors.email && <span className={style.error}>{errors.email}</span>}
+
                         </div>
                         <div className={style.formGroup}>
-                            <label>Phone number</label>
+                            <label>Phone number *</label>
                             <input
                                 type="text"
                                 name="phone"
                                 value={form.phone}
                                 onChange={handleChange}
                                 className={errors.phone ? style.errorInput : ''}
+                                aria-required="true"
+                                aria-invalid={errors.phone ? "true" : "false"}
                             />
                             {errors.phone && <span className={style.error}>{errors.phone}</span>}
                         </div>
@@ -144,9 +166,19 @@ function Form1() {
                             value={form.message}
                             onChange={handleChange}
                             className={errors.message ? style.errorInput : ''}
+                            aria-required="true"
+                            aria-invalid={errors.message ? "true" : "false"}
                         />
                         {errors.message && <span className={style.error}>{errors.message}</span>}
                     </div>
+
+                    <div className="flex flex-col mt-4">
+                        <ReCAPTCHA
+                            sitekey="6LeDRQgqAAAAAD8upWIOJmfKW8g83zqwA2EaE1CO"
+                            onChange={handleCaptchaChange}
+                        />
+                    </div>
+
                     <button className={style.submit} type="submit">
                         Submit
                     </button>

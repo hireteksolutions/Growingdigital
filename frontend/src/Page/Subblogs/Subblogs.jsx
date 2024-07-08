@@ -12,6 +12,7 @@ import Loader from '../Loader/Loader';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+import { Helmet } from 'react-helmet';
 
 function Subblogs() {
 
@@ -58,38 +59,50 @@ function Subblogs() {
 
     return (
         <>
-            <div style={{ position: "sticky", top: '0', zIndex: '3' }}>
+
+            <Helmet>
+                <title>{blog.title} | Your Blog Site</title>
+                <meta name="description" content={blog.excerpt || 'Read this amazing blog about ' + blog.title} />
+                <meta property="og:title" content={blog.title} />
+                <meta property="og:description" content={blog.excerpt || 'Read this amazing blog about ' + blog.title} />
+                <meta property="og:url" content={currentUrl} />
+                <meta property="og:type" content="article" />
+            </Helmet>
+
+            <header style={{ position: "sticky", top: '0', zIndex: '3' }}>
                 <Navbar />
-            </div>
+            </header>
 
-            <div data-aos="fade" className={style.heading}>
-                <h1 >{blog.title}</h1>
-                <p className='cursor-pointer' onClick={() => (Navigate('/blog'))}>Blog »{blog.title}</p>
-            </div>
-            <div className={style.content}>
-                <div data-aos="fade-up" className={style.box}>
+            <article >
+                <div data-aos="fade" className={style.heading}>
+                    <h1 >{blog.title}</h1>
+                    <p className='cursor-pointer' onClick={() => (Navigate('/blog'))}>Blog »{blog.title}</p>
+                </div>
+                <div className={style.content}>
+                    <div data-aos="fade-up" className={style.box}>
 
-                    <div className={style.p} dangerouslySetInnerHTML={{ __html: blog.content }} />
+                        <div className={style.p} dangerouslySetInnerHTML={{ __html: blog.content }} />
 
-                    <div data-aos="fade-down" className={style.share}>
-                        <div className={style.link} onClick={shareOnFacebook}>
-                            <RiFacebookLine size={24} />
-                            <span className={style.tooltip}>Facebook</span>
-                            <p>share this</p>
-                        </div>
-                        <div className={style.link} onClick={shareOnWhatsApp}>
-                            <FaWhatsapp size={24} />
-                            <span className={style.tooltip}>WhatsApp</span>
-                            <p>share this</p>
-                        </div>
-                        <div className={style.link} onClick={shareOnLinkedIn}>
-                            <FaLinkedinIn size={24} style={{ marginRight: '4px' }} />
-                            <span className={style.tooltip}>LinkedIn</span>
-                            <p>share this</p>
-                        </div>
+                        <aside data-aos="fade-down" className={style.share}>
+                            <div className={style.link} onClick={shareOnFacebook}>
+                                <RiFacebookLine size={24} />
+                                <span className={style.tooltip}>Facebook</span>
+                                <p>share this</p>
+                            </div>
+                            <div className={style.link} onClick={shareOnWhatsApp}>
+                                <FaWhatsapp size={24} />
+                                <span className={style.tooltip}>WhatsApp</span>
+                                <p>share this</p>
+                            </div>
+                            <div className={style.link} onClick={shareOnLinkedIn}>
+                                <FaLinkedinIn size={24} style={{ marginRight: '4px' }} />
+                                <span className={style.tooltip}>LinkedIn</span>
+                                <p>share this</p>
+                            </div>
+                        </aside >
                     </div>
                 </div>
-            </div>
+            </article >
 
             <Footer />
         </>

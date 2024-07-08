@@ -19,25 +19,25 @@ function Value() {
           <div>
             <h1>Online Growth</h1>
             <p>
-              Establishing a whole eCommerce system which acts as an independent selling channel
+              Establishing a whole eCommerce system which acts as an independent selling channel.
             </p>
           </div>
           <div>
             <h1>Operational Efficiency</h1>
             <p>
-              Handling all your end-to-end operations on your behalf to maximize your customer experience
+              Handling all your end-to-end operations on your behalf to maximize your customer experience.
             </p>
           </div>
           <div>
             <h1>Cost Optimization</h1>
             <p>
-              Integrating tools which can efficiently focus your budgets on what grows your business
+              Integrating tools which can efficiently focus your budgets on what grows your business.
             </p>
           </div>
           <div>
             <h1>Targeted Sales</h1>
             <p>
-              Implementing marketing tactics to grow & expand your customer base
+              Implementing marketing tactics to grow & expand your customer base.
             </p>
           </div>
         </div>

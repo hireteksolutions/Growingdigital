@@ -8,7 +8,6 @@ import "react-quill/dist/quill.snow.css";
 import Loader from "../Loader/Loader";
 import { useNavigate } from "react-router-dom";
 
-
 const BlogForm = () => {
   const navigate = useNavigate();
 
@@ -21,18 +20,18 @@ const BlogForm = () => {
   const [loading, setLoading] = useState(false);
   const [isImageResized, setIsImageResized] = useState(false);
   const [originalImagePreview, setOriginalImagePreview] = useState(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const token = localStorage.getItem("token");
   const userId = localStorage.getItem("userId");
-  // const userId = localStorage.getItem("userId");
 
   useEffect(() => {
     const checkAuth = () => {
-      console.log(token);
-      console.log(userId);
       if (!token || !userId) {
         navigate("/");
         toast.error("Unauthorized access. Redirecting to homepage.");
+      } else {
+        setIsLoggedIn(true);
       }
     };
 
@@ -43,20 +42,16 @@ const BlogForm = () => {
     ["bold", "italic", "underline", "strike"],
     ["blockquote", "code-block"],
     ["link", "image", "video", "formula"],
-
     [{ header: 1 }, { header: 2 }],
     [{ list: "ordered" }, { list: "bullet" }, { list: "check" }],
     [{ script: "sub" }, { script: "super" }],
     [{ indent: "-1" }, { indent: "+1" }],
     [{ direction: "rtl" }],
-
     [{ size: ["small", false, "large", "huge"] }],
     [{ header: [1, 2, 3, 4, 5, 6, false] }],
-
     [{ color: [] }, { background: [] }],
     [{ font: [] }],
     [{ align: [] }],
-
     ["clean"],
   ];
 
@@ -74,8 +69,8 @@ const BlogForm = () => {
         const canvas = document.createElement("canvas");
         const ctx = canvas.getContext("2d");
 
-        const MAX_WIDTH = 800; // desired width
-        const MAX_HEIGHT = 600; // desired height
+        const MAX_WIDTH = 800;
+        const MAX_HEIGHT = 600;
         let width = img.width;
         let height = img.height;
 
@@ -122,7 +117,6 @@ const BlogForm = () => {
 
     if (!title.trim()) {
       const errorMsg = "Title is required";
-      console.error(errorMsg);
       toast.error(errorMsg);
       setLoading(false);
       return;
@@ -130,7 +124,6 @@ const BlogForm = () => {
 
     if (!content.trim()) {
       const errorMsg = "Content is required";
-      console.error(errorMsg);
       toast.error(errorMsg);
       setLoading(false);
       return;
@@ -138,7 +131,6 @@ const BlogForm = () => {
 
     if (!file) {
       const errorMsg = "File is required";
-      console.error(errorMsg);
       toast.error(errorMsg);
       setLoading(false);
       return;
@@ -198,8 +190,6 @@ const BlogForm = () => {
         throw new Error(`Failed to create blog: ${errorText}`);
       }
 
-      const returndata = await blogResponse.json();
-
       setTitle("");
       setContent("");
       setFile(null);
@@ -208,7 +198,6 @@ const BlogForm = () => {
 
       toast.success("Blog created successfully!");
     } catch (error) {
-      console.error("Error:", error);
       toast.error(`Error: ${error.message}`);
     } finally {
       setLoading(false);
@@ -222,20 +211,9 @@ const BlogForm = () => {
   return (
     <div className={`${styles.formContainer} ${styles.shadow}`}>
       {loading && <Loader />}
-      {/* <ReactPlayer
-        url="https://youtu.be/WsnlrU1uWH0?si=BR1MD8CltI8kqQR2"
-        playing
-        loop
-        muted
-        width="100%"
-        height="100%"
-        style={{ position: "fixed", top: 0, left: 0, zIndex: -1 }}
-      /> */}
-
       <div className={styles.mainn}>
         <form onSubmit={handleSubmit} className={styles.form}>
-
-          <div className='flex justify-end'>
+          <div className="flex justify-end">
             <button
               type="button"
               className={styles.ThreeDButton}
@@ -243,7 +221,6 @@ const BlogForm = () => {
             >
               Dashboard
             </button>
-
           </div>
 
           <h2 className={styles.heading}>Create a New Blog</h2>

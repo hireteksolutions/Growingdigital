@@ -3,7 +3,7 @@ import style from './Contact.module.css'
 import Navbar from '../../Component/Navbar/Navbar';
 import Footer from '../../Component/Footer/Footer';
 import Form1 from '../../Component/Form1/Form1';
-import Section from '../../Component/Section/Section'
+import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
 
 import Aos from "aos";
@@ -20,6 +20,12 @@ function Contact() {
 
     return (
         <>
+            <Helmet>
+                <title>Contact Us | Growing Digital</title>
+                <meta name="description" content="Get in touch with Growing Digital for fully managed services and ready-made solutions to establish, market, and manage your business online. Discuss with our specialized relationship managers today!" />
+                <meta name="keywords" content="contact, digital solutions, online business, digital marketing, managed services" />
+            </Helmet>
+
             <div style={{ position: "sticky", top: '0', zIndex: '3' }}>
                 <Navbar />
             </div>
@@ -65,9 +71,6 @@ function Contact() {
                     </div>
                 </div>
             </section>
-
-            <Section />
-
             <Footer />
         </>
     )

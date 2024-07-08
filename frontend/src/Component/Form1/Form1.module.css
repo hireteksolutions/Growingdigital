@@ -20,6 +20,7 @@
     flex: 1;
     min-width: 200px;
     margin-top: 1rem;
+    margin-bottom: 1em;
 }
 
 textarea {
@@ -79,7 +80,7 @@ input:focus, textarea:focus {
 }
 
 .formGroup {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     flex: 1;
     margin-right: 1rem;
 }

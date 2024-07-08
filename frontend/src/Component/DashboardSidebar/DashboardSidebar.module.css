@@ -89,14 +89,16 @@
 
 .userDetails {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  justify-content: center;
+  align-items: center;
+
 }
 
 .profilePicture {
-  width: 40px; /* Adjust the size as needed */
-  height: 40px; /* Adjust the size as needed */
+  width: 40px;
+  /* Adjust the size as needed */
+  height: 40px;
+  /* Adjust the size as needed */
   border-radius: 50%;
   margin-right: 10px;
   object-fit: cover;
@@ -132,7 +134,7 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  background-color: #000000;
+  background-color: white;
 }
 
 .nav>ul {
@@ -215,7 +217,7 @@ li:hover .Admin {
   color: #ff6347;
 }
 
-.dark  .navicon {
+.dark .navicon {
   color: rgb(0, 0, 0);
 }
 
@@ -335,10 +337,13 @@ li {
   align-items: center;
   justify-content: center;
 }
+
 .leftcontainer {
   padding: 1em;
-  background-color: #000000;  /* Adjust background color as needed */
-  height: 100vh; /* Ensure the sidebar spans the full height */
+  background-color: #ffffff;
+  /* Adjust background color as needed */
+  height: 100vh;
+  /* Ensure the sidebar spans the full height */
 }
 
 .leftcontainer .logo {
@@ -369,11 +374,11 @@ li {
   margin-bottom: 1em;
   display: flex;
   align-items: center;
-  color: rgb(17, 79, 26);
+  color: rgb(255 255 255);
   gap: 10px;
   box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
   transition: all 0.3s ease;
-  background: white;
+  background: #2ca644;
 }
 
 .leftcontainer ul li svg {
@@ -391,7 +396,8 @@ li {
 }
 
 .leftcontainer .mode {
-  margin-top: auto; /* Push the switch to the bottom */
+  margin-top: auto;
+  /* Push the switch to the bottom */
   display: flex;
   justify-content: center;
   padding: 1em 0;
@@ -399,8 +405,10 @@ li {
 
 
 .leftcontainer ul li.active {
-  background-color: #000000; /* Highlight background color for active state */
-  box-shadow: 0px 0px 8px rgba(255, 255, 255, 1); /* Enhanced shadow for active state */
+  background-color: #000000;
+  /* Highlight background color for active state */
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+  /* Enhanced shadow for active state */
 }
 
 .leftcontainer .mode {
@@ -506,7 +514,7 @@ li {
   top: 0;
   overflow-y: auto;
   overflow-x: hidden;
-  background: black;
+  /* background: black; */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.386);
   display: flex;
   text-align: center;
@@ -514,7 +522,7 @@ li {
   width: 300px;
 }
 
-.mainbox.dark{
+.mainbox.dark {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -529,7 +537,7 @@ li {
   color: white;
 }
 
-.mainbox.dark h1{
+.mainbox.dark h1 {
   margin-top: 1em;
   font-size: 8.5vw;
   text-shadow: 0px 0px 10px rgb(0, 0, 0);
@@ -545,13 +553,13 @@ li {
     color: white;
   }
 
-  .mainbox.dark h1{
+  .mainbox.dark h1 {
     margin-top: 1em;
     font-size: 4vw;
     text-shadow: 0px 0px 10px rgb(0, 0, 0);
     color: rgb(0, 0, 0);
   }
-  
+
 }
 
 .mainbox ul {
@@ -580,8 +588,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
-  color: #114311;
+  background: #2ca644;
+  color: #ffffff;
 }
 
 .dark.mainbox ul li {
@@ -609,7 +617,7 @@ li {
     font-size: 2vw;
   }
 
-   .dark.mainbox ul li {
+  .dark.mainbox ul li {
     font-size: 2vw;
   }
 }
@@ -794,7 +802,7 @@ li {
 
 
 
-.logo2{
+.logo2 {
   width: 100%;
   display: flex;
   align-items: center;

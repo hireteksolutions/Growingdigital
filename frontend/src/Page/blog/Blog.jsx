@@ -7,6 +7,7 @@ import style from './Blog.module.css';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+import { Helmet } from 'react-helmet';
 import { FaAngleDoubleLeft } from "react-icons/fa";
 import { FaAnglesRight } from "react-icons/fa6";
 
@@ -21,12 +22,15 @@ function Blog() {
   const [currentPage, setCurrentPage] = useState(1);
   const blogsPerPage = 6;
 
+
   useEffect(() => {
     // Fetch blogs from backend
     axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/blog`)
       .then(response => {
-        setBlogs(response.data);
-        console.log('blogs', response);
+        const allBlogs = response.data;
+        const publishedBlogs = allBlogs.filter(blog => blog.publish); // Filter published blogs
+        setBlogs(publishedBlogs);
+        console.log('publishedBlogs', publishedBlogs);
       })
       .catch(error => {
         console.error('Error fetching blogs:', error);
@@ -58,7 +62,7 @@ function Blog() {
         disabled={currentPage === 1}
         className={style.arrowButton}
       >
-       <FaAngleDoubleLeft/>
+        <FaAngleDoubleLeft />
       </button>
     );
 
@@ -115,7 +119,7 @@ function Blog() {
         disabled={currentPage === totalPages}
         className={style.arrowButton}
       >
-        <FaAnglesRight/>
+        <FaAnglesRight />
       </button>
     );
 
@@ -124,39 +128,49 @@ function Blog() {
 
   return (
     <>
-      <div style={{ position: "sticky", top: '0', zIndex: '3' }}>
+      <Helmet>
+        <title>Blog | Growing Digital</title>
+        <meta name="description" content="Explore our blog for the latest news, insights, and updates in the field of eCommerce and digital solutions." />
+      </Helmet>
+
+      <header style={{ position: "sticky", top: '0', zIndex: '3' }}>
         <Navbar />
-      </div>
+      </header>
 
-      <div className={style.about}>
-        <div className={style.aboutimg}>
-          <h1 data-aos="fade">
-            Welcome To Our Blog
-          </h1>
-          <p data-aos="fade">
-            Understand more about our industry field, discover the latest news and advancements in eCommerce and get to know us and our achievements more.
-          </p>
-        </div>
-      </div>
-
-      {currentBlogs.map(blog => (
-        <section data-aos="fade-up" key={blog.blogId} className={style.Blog}>
-          <div className={style.one}>
-            <img src={blog.mediaUrl} alt={blog.title} />
-          </div>
-          <div className={style.two}>
-            <h1>
-              <Link to={`/blog/${blog.slug}`}>{blog.title}</Link>
+      <main>
+        <div className={style.about}>
+          <div className={style.aboutimg}>
+            <h1 data-aos="fade">
+              Welcome To Our Blog
             </h1>
-            <div className={style.p} dangerouslySetInnerHTML={{ __html: blog.content }} />
+            <p data-aos="fade">
+              Understand more about our industry field, discover the latest news and advancements in eCommerce and get to know us and our achievements more.
+            </p>
           </div>
-        </section>
-      ))}
+        </div>
 
-      <div className={style.pagination}>
-        {renderPaginationButtons()}
-      </div>
+        {currentBlogs.map(blog => (
+          <section data-aos="fade-up" key={blog.blogId} className={style.Blog}>
+            <div className={style.one}>
+              <img src={blog.mediaUrl} alt={blog.title} />
+              <div className={style['title-overlay']}>
+                <h2>{blog.title}</h2>
+              </div>
+            </div>
+            <div className={style.two}>
+              <h1>
+                <Link to={`/blog/${blog.slug}`}>{blog.title}</Link>
+              </h1>
+              <div className={style.p} dangerouslySetInnerHTML={{ __html: blog.content }} />
+            </div>
+          </section>
+        ))}
 
+        <nav className={style.pagination} aria-label="Blog Pagination">
+          {renderPaginationButtons()}
+        </nav>
+      </main>
+      
       <Footer />
     </>
   );

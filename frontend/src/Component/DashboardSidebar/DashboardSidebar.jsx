@@ -115,7 +115,7 @@ const DashboardSidebar = () => {
       <div className={styles.sidebar}>
         {/* First occurrence of the logo part */}
         <div className={styles.logo} onClick={handleLogoClick}>
-          <img style={{width:'20%'}} src={logo} alt="" />
+          <img style={{ width: '20%' }} src={logo} alt="" />
         </div>
 
         <div className={styles.iconsContainer}>
@@ -145,8 +145,9 @@ const DashboardSidebar = () => {
 
           <ul>
             <li style={{ position: "relative" }}>
-              <FaRegUser style={{ color: "white" }} />
+              <FaRegUser style={{ color: "#686868" }} />
               <div className={styles.Admin}>
+                
                 {userDetails && (
                   <>
                     <div className={styles.userDetails}>
@@ -161,6 +162,9 @@ const DashboardSidebar = () => {
                     <p className={styles.options} onClick={handleLogout}>
                       <FiLogOut /> Logout
                     </p>
+                    {/* <p className={styles.options} onClick={handleEditProfile}>
+                      <FaEdit /> Edit Profile
+                    </p> */}
                   </>
                 )}
               </div>
@@ -198,7 +202,11 @@ const DashboardSidebar = () => {
               >
                 <TbCategoryFilled /> Contact Details
               </li>
-              <li onClick={() => window.open("/upload", "_blank")}>
+              <li
+                onClick={() => {
+                  navigate("/upload");
+                }}
+              >
                 <TbCategoryFilled /> Upload Blog
               </li>
             </ul>
@@ -211,11 +219,11 @@ const DashboardSidebar = () => {
       </div>
 
       <section className={styles.leftcontainer}>
-        {/* Second occurrence of the logo part */}
 
         <div className={styles.logo} onClick={handleLogoClick}>
           <img src={logo} alt="Logo" />
         </div>
+        <div className={styles.logo} onClick={handleLogoClick}></div>
 
         <ul>
           <li
@@ -232,11 +240,16 @@ const DashboardSidebar = () => {
           >
             <TbCategoryFilled /> Contact Details
           </li>
-          <li onClick={() => navigate("/upload")}>
+          
+          <li
+            onClick={() => {
+              navigate("/upload");
+            }}
+          >
             <TbCategoryFilled /> Upload Blog
           </li>
         </ul>
-      </section>
+      </section >
     </>
   );
 };

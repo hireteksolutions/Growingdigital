@@ -71,50 +71,58 @@ function Blog() {
   const customStyles = {
     header: {
       style: {
-        backgroundColor: "#242424",
-        color: "#ffffff",
+        backgroundColor: "#3CB371", // Medium sea green
+        color: "#ffffff", // White
       },
     },
     headRow: {
       style: {
-        backgroundColor: "#242424",
+        backgroundColor: "#3CB371", // Medium sea green for header row
       },
     },
     headCells: {
       style: {
-        color: "#ffffff",
+        color: "#ffffff", // White for header cell text
+        fontSize: "16px", // Adjust font size if needed
+        fontWeight: "bold", // Make header text bold
+        paddingLeft: "16px", // Add padding to header cells
+        paddingRight: "16px",
       },
     },
     rows: {
       style: {
-        backgroundColor: "#242424",
-        color: "#ffffff",
-        "&:not(:last-of-type)": {
-          borderBottomColor: "#3d3d3d",
-        },
+        backgroundColor: "#ffffff", // White background for rows
+        color: "#333333", // Dark gray text color
+        borderBottomColor: "#3CB371", // Medium sea green bottom border
         minHeight: "100px", // Set a consistent row height
       },
       highlightOnHoverStyle: {
-        backgroundColor: "#3d3d3d",
-        color: "#ffffff",
-        transitionDuration: "0.15s",
+        backgroundColor: "#f2f2f2", // Light gray background on hover
+        color: "#333333", // Dark gray text color on hover
+        transitionDuration: "0.15s", // Smooth transition duration
         transitionProperty: "background-color",
-        borderBottomColor: "#3d3d3d",
-        outline: "1px solid #3d3d3d",
+        borderBottomColor: "#3CB371", // Medium sea green bottom border on hover
+        outline: "none", // Remove outline on hover
       },
     },
     pagination: {
       style: {
-        backgroundColor: "#242424",
-        color: "#ffffff",
+        backgroundColor: "#3CB371", // Medium sea green for pagination bar
+        color: "#ffffff", // White text color
       },
     },
     table: {
       style: {
-        backgroundColor: "#242424",
+        backgroundColor: "#ffffff", // White background for table
+        borderRadius: "8px", // Add border radius for a softer look
+        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)", // Add shadow for depth
+        borderCollapse: "collapse", // Collapse table borders
+        width: "100%", // Set table width to 100%
+        marginTop: "16px", // Add top margin for spacing
       },
     },
   };
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -274,9 +282,8 @@ function Blog() {
   const handlePublishStatusChange = async (blogId, newStatus) => {
     const result = await Swal.fire({
       title: "Are you sure?",
-      text: `Do you want to change the status to ${
-        newStatus ? "Publish" : "Draft"
-      }?`,
+      text: `Do you want to change the status to ${newStatus ? "Publish" : "Draft"
+        }?`,
       icon: "warning",
       showCancelButton: true,
       confirmButtonText: "Yes, change it!",
@@ -451,17 +458,15 @@ function Blog() {
               onChange={(e) => setSearchText(e.target.value)}
             />
             <button
-              className={`${style.searchbutton} ${
-                searchBy === "title" ? style.active : ""
-              }`}
+              className={`${style.searchbutton} ${searchBy === "title" ? style.active : ""
+                }`}
               onClick={() => handleSearchByChange("title")}
             >
               Title
             </button>
             <button
-              className={`${style.searchbutton} ${
-                searchBy === "authorName" ? style.active : ""
-              }`}
+              className={`${style.searchbutton} ${searchBy === "authorName" ? style.active : ""
+                }`}
               onClick={() => handleSearchByChange("authorName")}
             >
               Author

@@ -3,6 +3,7 @@ import style from "./Sidebar.module.css";
 import { ImCross } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
 import LoginModal from '../Login/Login';
+import { Helmet } from "react-helmet";
 
 const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
   const navigate = useNavigate();
@@ -40,79 +41,57 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
 
   return (
     <>
+      <Helmet>
+        <title>Main Menu</title>
+        <meta name="description" content="Main menu with various navigation options like Home, About Us, Services, Partners, Our Blog, and Contact Us." />
+      </Helmet>
       <div className={`${style.sidebar} ${isSidebarOpen ? style.open : ""}`}>
         {isSidebarOpen && (
           <div className={style.close} onClick={closeSidebar}>
             <ImCross />
           </div>
         )}
-        <h2 className={`${style.mainMenu} text-white-100  text-xl`}>Main Menu</h2>
+        <h2 className={`${style.mainMenu} text-white-100  text-xl`}>
+          Growing Digital Marketing Services in Delhi
+        </h2>
         <hr className={style.line} />
 
         <ul className={style.sidebarMenu}>
-
           <li className={style.li} onClick={() => navigate('/')}>
-            Home
+            <a href="/" aria-label="Home">Home</a>
           </li>
 
           <hr className={style.line} />
 
           <li onClick={() => navigate('/about')}>
-            About Us
-
+            <a href="/about" aria-label="About Us">About Us</a>
           </li>
 
           <hr className={style.line} />
 
-          <li onClick={() => toggleSubmenu("Gaming")}>
-            Our Solution
-            <span
-              className={`${style.arrow} ${submenus.Gaming ? style.rotateArrow : ""
-                }`}
-            >
-              +
-            </span>
-
-            <ul
-              className={`${style.submenu} ${submenus.Gaming ? style.open : ""
-                }`}
-            >
-              <li
-                onClick={() => navigate('/security')}
-              >
-                Security Unit
-              </li>
-
-              <li
-                onClick={() => navigate('/training')}
-              >
-                Training Unit
-              </li>
-            </ul>
+          <li onClick={() => navigate('/Service')}>
+            <a href="/Service" aria-label="Services">Services</a>
           </li>
 
           <hr className={style.line} />
 
           <li onClick={() => navigate('/partner')}>
-            Partners
-
-
+            <a href="/partner" aria-label="Partners">Partners</a>
           </li>
 
           <hr className={style.line} />
 
           <li onClick={() => navigate('/blog')}>
-            Our Blog
-
-
+            <a href="/blog" aria-label="Our Blog">Our Blog</a>
           </li>
 
           <hr className={style.line} />
 
           <li onClick={() => navigate('/contact')}>
-            Contact Us
-
+            <a href="/contact" aria-label="Contact Us">Contact Us</a>
           </li>
+
+          <hr className={style.line} />
 
           <li>
             {isLoggedIn ? (
@@ -122,8 +101,9 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
             )}
           </li>
 
-          {showModal && <LoginModal onClose={toggleModal} />}
+          <hr className={style.line} />
 
+          {showModal && <LoginModal onClose={toggleModal} />}
         </ul>
       </div>
     </>

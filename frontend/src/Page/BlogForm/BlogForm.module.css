@@ -145,34 +145,100 @@
   .formContainer {
     padding: 10px;
   }
+}
 
-  .form {
-    gap: 1rem;
-  }
+.ThreeDButton {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px #0056b3;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
 
-  .inputGroup input[type="text"],
-  .inputGroup input[type="file"],
-  .inputGroup textarea,
-  .inputGroup select {
-    padding: 0.5rem;
-    font-size: 0.875rem;
-  }
+.ThreeDButton:active {
+  box-shadow: 0 2px #0056b3;
+  transform: translateY(3px);
+}
 
-  .submitButton {
-    padding: 0.5rem;
-    font-size: 0.875rem;
-  }
-
-  .quill {
-    height: 300px;
-    /* Reduced height for smaller screens */
-  }
-
-  .quill .ql-editor {
-    height: 200px;
-    /* Editor height for smaller screens */
+@media (max-width: 768px) {
+  .ThreeDButton {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
+
+
+.imagePreviewContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagePreview,
+.resizedImagePreview {
+  max-width: 300px;
+  /* Set the max width for the images */
+  height: auto;
+  margin-top: 10px;
+}
+
+.resizedImagePreview {
+  max-width: 150px;
+  /* Set the max width for the resized image */
+}
+
+.resizedNotice {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+.shadow {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  gap: 1rem;
+}
+
+.inputGroup input[type="text"],
+.inputGroup input[type="file"],
+.inputGroup textarea,
+.inputGroup select {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.submitButton {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.quill {
+  height: 300px;
+  /* Reduced height for smaller screens */
+}
+
+.quill .ql-editor {
+  height: 200px;
+  /* Editor height for smaller screens */
+}
+
 
 .imagePreview {
   width: 500px;

@@ -124,7 +124,7 @@
     padding: 2%;
     display: flex;
     align-items: center;
-    gap: 4vw;
+    gap: 6vw;
     overflow-x: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;

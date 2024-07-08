@@ -16,7 +16,6 @@ const UploadBlog = lazy(() => import('./Page/BlogForm/BlogForm'))
 const DashboardContact = lazy(() => import('./Page/DashboardContact/DashboardContact'))
 const ErrorPage = lazy(() => import('./Page/ErrorPage/ErrorPage'));
 const Loader = lazy(() => import('./Component/Loader/Loader'));
-const Fb = lazy(() => import('./Page/Fb/Fb'));
 // const DashboardContact = lazy(()=> import('./Page/Contacts/Contact'))
 
 function App() {
@@ -30,9 +29,8 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<Subblogs />} />
             <Route path="/partner" element={<Partners />} />
-            <Route path="/Fb" element={<Fb />} />
 
-            <Route path="/security" element={<Security />} />
+            <Route path="/Service" element={<Security />} />
             <Route path="/contact" element={<Contact />} />
             {/* <Route path="/training" element={<Training />} /> */}
             <Route path="/password-reset" element={<Reset />} />

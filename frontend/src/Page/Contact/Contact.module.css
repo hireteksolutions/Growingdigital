@@ -56,7 +56,7 @@
 
 .container {
     display: flex;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 @media screen and (max-width:768px) {

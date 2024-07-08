@@ -288,7 +288,7 @@
 
 
 .value .container {
-    background: #083b3b;
+    background: linear-gradient(to right, #1B4A37, #3B7A57);
     width: 100%;
     border-radius: 10px;
     padding: 2%;
@@ -354,6 +354,7 @@
 .value .container .two ul li {
     font-size: 2vw;
     margin-bottom: 0.6em;
+    padding-left: 1%;
     color: white;
     text-align: justify;
 }
@@ -366,10 +367,9 @@
 }
 
 
-.value .container .two ul li::before {
+.value .container .two ul li::marker {
     content: "\2713";
-    margin-right: 8px;
-    color: green;
+    /* color: green; */
 }
 
 
@@ -385,7 +385,7 @@
 .our1,
 .our2 {
     width: 100%;
-    background: #083b3b;
+    background: linear-gradient(to right, #1B4A37, #3B7A57);
     border-radius: 10px;
     padding: 2%;
     display: flex;
