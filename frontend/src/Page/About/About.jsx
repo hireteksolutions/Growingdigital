@@ -28,22 +28,7 @@ function About() {
                 <title>About Us | Growing Digital</title>
                 <meta name="description" content="Learn more about Growing Digital, our mission, vision, and values. We empower businesses in the digital age with expert solutions." />
                 <meta name="keywords" content="Growing Digital, digital solutions, digital marketing, ecommerce, business transformation" />
-                <script type="application/ld+json">
-                    {`
-                        {
-                            "@context": "https://schema.org",
-                            "@type": "Organization",
-                            "name": "Growing Digital",
-                            "url": "https://www.growingdigital.com",
-                            "logo": "https://www.growingdigital.com/logo.png",
-                            "sameAs": [
-                                "https://www.facebook.com/growingdigital",
-                                "https://www.twitter.com/growingdigital",
-                                "https://www.linkedin.com/company/growingdigital"
-                            ]
-                        }
-                    `}
-                </script>
+                
             </Helmet>
 
             <header style={{ position: "sticky", top: '0', zIndex: '3' }}>

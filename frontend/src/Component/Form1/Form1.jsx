@@ -88,7 +88,6 @@ function Form1() {
     return (
         <>
             <Helmet>
-                <title>Contact Us Form</title>
                 <meta name="description" content="Fill out the form to get in touch with us. Provide your first name, last name, email address, phone number, and message." />
             </Helmet>
 

@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../../Component/Navbar/Navbar';
 import Footer from '../../Component/Footer/Footer';
 import style from './Home.module.css';
-import One from '../../Assets/One.jpg';
-import Two from '../../Assets/homepage.jpg';
-import Three from '../../Assets/homepage2.jpg';
-import Four from '../../Assets/homepage3.jpg';
-import Five from '../../Assets/homepage4.jpg';
-import Six from '../../Assets/homepage5.jpg';
-import Seven from '../../Assets/homepage6.jpg';
+
+import SEO from '../../Assets/Two.jpg';
+import Three from '../../Assets/three.jpg';
+
+import Four from '../../Assets/four.avif';
+import Linkdin from '../../Assets/five.jpg';
+import Social from '../../Assets/six.avif';
+
 import img from '../../Assets/home.png';
 import MOw from '../../Assets/Dell.png';
 import Aryan from '../../Assets/Cisco.png';
@@ -22,7 +23,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const images = [One, Two, Three, Four, Five, Six, Seven];
+const images = [SEO, Three, Four, Linkdin, Social];
 
 const services = [
   {
@@ -87,7 +88,7 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Your Gateway to the Digital Frontier | Home</title>
+        <title>Your Gateway to the Digital Frontier | Home </title>
         <meta name="description" content="We reshape the digital landscape with top-tier digital services and data-driven strategies for unparalleled success. Explore our services and partners." />
       </Helmet>
 
@@ -96,7 +97,9 @@ function Home() {
       </header>
 
       <section style={{ overflow: 'hidden' }} className={style.home}>
+
         <div data-aos="fade-right" className={style.left}>
+
           <Slider
             className={style.slider}
             autoplay={true}

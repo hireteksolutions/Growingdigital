@@ -7,7 +7,6 @@ import Form1 from '../../Component/Form1/Form1'
 import img from '../../Assets/Web.jpg'
 import software from '../../Assets/SEO.jpg'
 import { FiSmartphone } from "react-icons/fi";
-import Client from '../../Component/Client/Client'
 import Card from '../../Component/Card/Card'
 import banner from '../../Assets/Camp.webp'
 import Service from '../../Assets/Service.jpg'
@@ -28,7 +27,7 @@ function Security() {
     return (
         <>
             <Helmet>
-                <title>Innovative Web Development Solutions | Growing Digital</title>
+                <title>Our Service | Growing Digital</title>
                 <meta name="description" content="Explore our wide range of digital services including web development, SEO, social media marketing, and more. Empower your brand with our innovative solutions." />
             </Helmet>
 
@@ -245,7 +244,6 @@ function Security() {
 
             <Value />
 
-            <Client />
 
             <section className={style.formh}>
                 <h1>

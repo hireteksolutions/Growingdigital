@@ -24,6 +24,13 @@
 }
 
 
+.left .sliderImage{
+    width: 90%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+ 
 @media screen and (max-width: 768px) {
 
     .home{
@@ -147,26 +154,54 @@
     justify-content: space-evenly;
 }
 
-.home2 .child1,
-.home2 .child2,
-.home2 .child3,
 .home2 .child4 {
     width: 24%;
-    background: #083b3b;
+    background: #019149;
     padding: 1%;
     flex-wrap: wrap;
-    cursor: pointer;
     border-radius: 10px;
     margin-bottom: 1em;
+    transition: all 0.3s linear;
+
 }
 
-.child1:hover,
+.home2 .child3{
+    width: 24%;
+    background: #019149;
+    padding: 1%;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    transition: all 0.3s linear;
+}
+
+.home2 .child2{
+    width: 24%;
+    background: #019149;
+    padding: 1%;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    transition: all 0.3s linear;
+}
+
+.home2 .child1{
+    width: 24%;
+    background: #019149;
+    padding: 1%;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    transition: all 0.3s linear;
+}
+
+/* .child1:hover,
 .child2:hover,
 .child3:hover,
 .child4:hover {
     background: #065a5a;
     color: #e0f7fa;
-}
+} */
 
 .child1 h2,
 .child2 h2,

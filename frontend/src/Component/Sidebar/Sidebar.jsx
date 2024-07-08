@@ -41,10 +41,7 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
 
   return (
     <>
-      <Helmet>
-        <title>Main Menu</title>
-        <meta name="description" content="Main menu with various navigation options like Home, About Us, Services, Partners, Our Blog, and Contact Us." />
-      </Helmet>
+
       <div className={`${style.sidebar} ${isSidebarOpen ? style.open : ""}`}>
         {isSidebarOpen && (
           <div className={style.close} onClick={closeSidebar}>
@@ -52,7 +49,7 @@ const Sidebar = ({ isSidebarOpen, closeSidebar }) => {
           </div>
         )}
         <h2 className={`${style.mainMenu} text-white-100  text-xl`}>
-          Growing Digital Marketing Services in Delhi
+          Growing Digital
         </h2>
         <hr className={style.line} />
 
