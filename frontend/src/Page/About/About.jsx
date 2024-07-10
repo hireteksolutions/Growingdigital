@@ -7,10 +7,10 @@ import img2 from '../../Assets/About.png'
 import img3 from '../../Assets/Market.jpg'
 import img4 from '../../Assets/concept.jpg'
 
-import value from '../../Assets/About - Grow Digital_files/value.png'
-import mission2 from '../../Assets/About - Grow Digital_files/mission2.png'
-import vision2 from '../../Assets/About - Grow Digital_files/vision2.png'
-import Section from '../../Component/Section/Section';
+import value from '../../Assets/value.png'
+import mission2 from '../../Assets/mission2.png'
+import vision2 from '../../Assets/vision2.png'
+
 import { Helmet } from "react-helmet";
 import Aos from "aos";
 import "aos/dist/aos.css";
