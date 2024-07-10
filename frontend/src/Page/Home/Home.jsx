@@ -156,9 +156,10 @@ function Home() {
             We treat each client as a business partner, your success defines ours.
           </h6>
 
-          <button onClick={() => { navigate('/security') }} className={style.exploreButton}>
+          <button onClick={() => { navigate('/Service') }} className={style.exploreButton}>
             Explore Our Services
           </button>
+          
         </div>
       </section>
 

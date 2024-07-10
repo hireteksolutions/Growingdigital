@@ -37,6 +37,12 @@
         padding: 0;
     }
 
+    .left .sliderImage{
+        width: 100%;
+        object-fit: cover;
+        height: 40vh;
+    }
+
     .home .left {
         width: 100%;
         margin-bottom: 10px; 

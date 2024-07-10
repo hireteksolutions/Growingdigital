@@ -37,14 +37,22 @@ function Footer() {
                             +91 95999 01561
                         </p>
                     </div>
+
                     <div className={style.icon}>
-
-                        <IoLogoInstagram className={style.icon1} />
-                        <RiFacebookLine className={style.icon2} />
-                        <FaLinkedinIn className={style.icon3} />
-                        <FaTwitter className={style.icon4} />
-
+                        <a href="https://www.instagram.com" title='Instagram' target="_blank" rel="noopener noreferrer">
+                            <IoLogoInstagram className={style.icon1} />
+                        </a>
+                        <a href="https://www.facebook.com" title='Facebook' target="_blank" rel="noopener noreferrer">
+                            <RiFacebookLine className={style.icon2} />
+                        </a>
+                        <a href="https://www.linkedin.com" title='Linkedin' target="_blank" rel="noopener noreferrer">
+                            <FaLinkedinIn className={style.icon3} />
+                        </a>
+                        <a href="https://www.twitter.com" title='twitter' target="_blank" rel="noopener noreferrer">
+                            <FaTwitter className={style.icon4} />
+                        </a>
                     </div>
+
 
                 </div>
 
