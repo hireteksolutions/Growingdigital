@@ -25,7 +25,7 @@
 
 
 @media screen and (max-width:768px) {
-    
+
     .nav .h2 .logo {
         width: 40%;
     }
@@ -33,7 +33,7 @@
 
 
 @media screen and (max-width:600px) {
-    
+
     .nav h2 .logo {
         width: 50%;
     }
@@ -145,3 +145,5 @@
         border: none;
     }
 }
+
+

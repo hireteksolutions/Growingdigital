@@ -7,6 +7,8 @@ import logo from '../../Assets/logo.png';
 import Sidebar from '../Sidebar/Sidebar'; // Import the Sidebar component
 import { RxHamburgerMenu } from "react-icons/rx";
 
+import whatsapp from '../../Assets/whatsapp.png'
+
 import style from './Navbar.module.css';
 
 function Navbar() {
@@ -16,6 +18,9 @@ function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); // State to manage sidebar visibility
   const navigate = useNavigate();
   const location = useLocation();
+
+  const phoneNumber = "9205149600";
+  const whatsappUrl = `https://wa.me/${phoneNumber}`;
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -159,6 +164,16 @@ function Navbar() {
       {showModal && <LoginModal onClose={toggleModal} />}
       <Sidebar isSidebarOpen={isSidebarOpen} closeSidebar={toggleSidebar} /> {/* Pass sidebar state */}
       <ToastContainer />
+
+      <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+        <img
+          className="fixed bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-12 right-2 sm:right-3 md:right-4 lg:right-6 cursor-pointer hover:scale-[.95] w-[20%] sm:w-[15%] md:w-[10%] lg:w-[5%]"
+          title="whatsapp"
+          src={whatsapp}
+          alt="whatsapp"
+        />
+      </a>
+
     </nav>
   );
 }

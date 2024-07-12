@@ -88,8 +88,8 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Your Gateway to the Digital Frontier | Home </title>
-        <meta name="description" content="We reshape the digital landscape with top-tier digital services and data-driven strategies for unparalleled success. Explore our services and partners." />
+        <title>Grow Digitally with Delhi NCR's Leading Digital Marketing Agency  | Home </title>
+        <meta name="description" content="Delhi NCR's leading digital marketing agency, offers expert SEO, PPC, SMO,LinkedIn Optimization, Branding and more to businesses across India. Contact us today." />
       </Helmet>
 
       <header style={{ position: "sticky", top: '0', zIndex: '3' }}>
@@ -120,12 +120,12 @@ function Home() {
         </div>
 
         <div data-aos="fade-left" className={style.right}>
-          <h2>
-            GROWING DIGITAL
-          </h2>
           <h1>
-            YOUR GATEWAY TO THE DIGITAL FRONTIER
+            GROWING DIGITAL
           </h1>
+          <h2>
+            YOUR GATEWAY TO THE DIGITAL FRONTIER
+          </h2>
           <p>
             We've embarked on a journey to reshape the digital landscape, emerging as a beacon of technology-driven excellence. Our steadfast commitment to delivering top-tier digital services and unwavering dedication to our clients set us apart in the dynamic digital world. Our steadfast commitment to pioneering data-informed approaches propels our clients toward unparalleled success.
           </p>
@@ -139,7 +139,7 @@ function Home() {
         <div data-aos="fade-up" className={style.box}>
           {services.map((service, index) => (
             <div key={index} className={style[`child${index + 1}`]}>
-              <h2>{service.title}</h2>
+              <h1>{service.title}</h1>
               <p>{service.description}</p>
             </div>
           ))}
@@ -159,7 +159,7 @@ function Home() {
           <button onClick={() => { navigate('/Service') }} className={style.exploreButton}>
             Explore Our Services
           </button>
-          
+
         </div>
       </section>
 
@@ -170,7 +170,7 @@ function Home() {
         {cards.map((card, index) => (
           <div className={style.card} key={index}>
             <div className={style.card1}>
-              <h2>{card.title}</h2>
+              <h1>{card.title}</h1>
             </div>
             <div className={style.card2}>
               <p data-aos="fade">{card.description}</p>
@@ -181,7 +181,7 @@ function Home() {
 
       <section style={{ overflow: 'hidden' }} className={style.about}>
         <div data-aos="fade-right" className={style.Mission}>
-          <h2>Our Mission</h2>
+          <h1>Our Mission</h1>
           <hr className={style.line} />
           <p>
             We empower businesses in the digital age with expert solutions, emphasizing a client-centric approach, innovation, ethical practices, community impact, while maintaining a commitment to measurable results.
@@ -191,9 +191,8 @@ function Home() {
           </button>
         </div>
 
-
         <div data-aos="fade-left" className={style.Mission}>
-          <h2>Our Vision</h2>
+          <h1>Our Vision</h1>
           <hr className={style.line} />
           <p>
             We aim to transform businesses into digital success stories through innovation and data-driven strategies, consistently delivering exceptional results, empowering clients to thrive in the digital landscape.

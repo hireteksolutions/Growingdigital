@@ -3,7 +3,6 @@ import style from './Footer.module.css'
 import { IoLogoInstagram } from "react-icons/io5";
 import { RiFacebookLine } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa6";
-import { FaTwitter } from "react-icons/fa";
 
 import Form from '../Form/Form';
 
@@ -39,20 +38,16 @@ function Footer() {
                     </div>
 
                     <div className={style.icon}>
-                        <a href="https://www.instagram.com" title='Instagram' target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/officialgrowingdigital/?hl=en" title='Instagram' target="_blank" rel="noopener noreferrer">
                             <IoLogoInstagram className={style.icon1} />
                         </a>
-                        <a href="https://www.facebook.com" title='Facebook' target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.facebook.com/profile.php?id=61550251507883" title='Facebook' target="_blank" rel="noopener noreferrer">
                             <RiFacebookLine className={style.icon2} />
                         </a>
-                        <a href="https://www.linkedin.com" title='Linkedin' target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/99891789/admin/feed/posts/" title='Linkedin' target="_blank" rel="noopener noreferrer">
                             <FaLinkedinIn className={style.icon3} />
                         </a>
-                        <a href="https://www.twitter.com" title='twitter' target="_blank" rel="noopener noreferrer">
-                            <FaTwitter className={style.icon4} />
-                        </a>
                     </div>
-
 
                 </div>
 
