@@ -91,7 +91,7 @@ function SocialMedia() {
             SOCIAL MEDIA MARKETING IN DELHI.
           </h2>
 
-          <h3 className={style.h3}>
+          <h3 className={`${style.h3} ${style.greenText}`}>
             What is your purpose or goal?
           </h3>
 
@@ -99,7 +99,7 @@ function SocialMedia() {
             How can social media help you to achieve your organization's goals? An organization needs to establish its marketing purpose so that the path forward in achieving the same can be planned accordingly. If an organization intends to create or increase its brand awareness many others use social media to bring in web traffic and sales. Social media marketing agencies can help to create customer engagements about your brand and also act as a customer support channel by creating a community.
           </p>
 
-          <h3 className={style.h3}>
+          <h3 className={`${style.h3} ${style.greenText}`}>
             What kind of social media platform do you want to focus on?
           </h3>
 
@@ -107,14 +107,14 @@ function SocialMedia() {
             It all comes down to the type of clientele you are targeting: younger folks who use Snapchat or Tik Tok, an older demographic that prefers to follow the latest news on Twitter, or a broader range of users who use Facebook and Instagram. If we decided on a platform, it would be simple to get social media marketing services to talk about it.
           </p>
 
-          <h3 className={style.h3}>
+          <h3 className={`${style.h3} ${style.greenText}`}>
             What type of content are you looking to share?
           </h3>
 
           <p className={style.p}>
             Choose a content that gains the attention of your audience in the best way. Do you choose videos, images or links? Are you planning to promote entertaining content or informative content? All of these elements put together in your marketing strategy enable social media.
           </p>
-          <h3 className={style.h3}>
+          <h3 className={`${style.h3} ${style.greenText}`}>
             Social Media Presence for B2B customers
           </h3>
 
@@ -122,7 +122,7 @@ function SocialMedia() {
             A growing digital offers specialized social media marketing services for institutions and commercial establishments, enhancing their digital presence and fostering connections in people's lives. Unlike a website that merely provides an online presence, social media bridges establishments with potential customers. The top social media agencies in Delhi utilize tools designed to improve your marketing efforts, effectively engaging and driving potential leads to your business.
           </p>
 
-          <h3 className={style.h3}>
+          <h3 className={`${style.h3} ${style.greenText}`}>
             Why Social Media when I already have a website?
           </h3>
 
@@ -130,7 +130,7 @@ function SocialMedia() {
             Ever wondered, as why companies invest in social media despite having a fully functional and responsive website? Well, a website only claims online presence and fails to connect with the people. Also, there is enough and more content but what is driving your customers to your website? The answer to all these questions is social media marketing services, at Growing Digital agency we take pride in hosting websites and providing top-class social media services. With polls, offers, and current information, there are no limits for customer engaging experiences. While the mortar and brick offices offer only fewer engagements due to its geographic limitations, an online presence backed with social media can do wonders in brand management. Be it a product or service, a strong digital presence can engage online customers and creates visibility in their eyes.
           </p>
 
-          <h3 className={style.h3}>
+          <h3 className={`${style.h3} ${style.greenText}`}>
             Did you know - Social Media is measurable?
           </h3>
 
@@ -138,7 +138,7 @@ function SocialMedia() {
             In today's digitally advanced world, it is essential to track every single visit to your site. It is important to know what visitors did on your site, why they left your site and how they interacted with your site. We need this information as it feeds back into your overall internet marketing strategy. Social media marketing companies allow you to make the changes that are necessary to improve the number of conversions be it inquiries, purchases, or just downloads. Google Analytics is a boon. If set-up correctly it will provide all the relevant information necessary to enable us, and in turn to optimize overall online performance and achieve the desired goals. Quite simply, without data, the online marketing process becomes incomplete. Get in touch with us for a free Social Media analytics audit, We can help you achieve better!
           </p>
 
-          <h3 className={`${style.h3}`}>
+          <h3 className={`${style.h3} ${style.greenText}`}>
             Target-oriented marketing
           </h3>
 
@@ -146,7 +146,7 @@ function SocialMedia() {
             Target-oriented marketing or Goal-oriented SMM services in Delhi focuses on the right audience to drive marketing activities. If a product or service is focused on or made for customers of a particular age group then social media agencies enable us to choose the specific crowd and the strategies prove higher conversion rates.
           </p>
 
-          <h3 className={`${style.h3}`}>
+          <h3 className={`${style.h3} ${style.greenText}`}>
             Which Social Media Channels or platforms do we work on?
           </h3>
 
@@ -178,7 +178,7 @@ function SocialMedia() {
             </li>
           </ul>
 
-          <h3 className={`${style.h3}`}>
+          <h3 className={`${style.h3} ${style.greenText}`}>
             How to make the most of your Ad-Budget? A sneak peek into Growing Digital’s secret tips!
           </h3>
 

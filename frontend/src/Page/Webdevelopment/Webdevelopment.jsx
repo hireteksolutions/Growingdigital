@@ -174,7 +174,7 @@ function Webdevelopment() {
                         {/* One-Stop Destination Section */}
                         <section className="mb-8">
                             <div className="max-w-7xl mx-auto">
-                                <div className="p-6 bg-green-100 shadow-lg rounded-lg flex flex-col md:flex-row items-center" data-aos="fade-up">
+                                <div className="p-6 bg-green-100 shadow-lg rounded-lg flex  flex-col md:flex-row items-stretch " data-aos="fade-up">
                                     <img src={devsub1} alt="Web Design & Development" className="w-full md:w-1/3 rounded-lg mb-4 md:mb-0 md:mr-6" />
                                     <div>
                                         <h2 className="text-4xl font-bold text-center md:text-left text-green-800   mb-4">Upgrade Your Business With Our Top-Notch Assistance.</h2>
@@ -190,7 +190,7 @@ function Webdevelopment() {
                         {/* Why Choose Us Section */}
                         <section className="mb-8">
                             <div className="max-w-7xl mx-auto">
-                                <div className="p-6 bg-yellow-100 shadow-lg rounded-lg flex flex-col md:flex-row items-center" data-aos="fade-up" data-aos-delay="200">
+                                <div className="p-6 bg-yellow-100 shadow-lg rounded-lg flex flex-col md:flex-row items-stretch" data-aos="fade-up" data-aos-delay="200">
                                     <img src={devsub2} alt="Why Choose Us" className="w-full  md:w-1/3 rounded-lg mb-4 md:mb-0 md:mr-6" />
                                     <div>
                                         <h2 className="text-4xl font-bold text-center md:text-left text-yellow-800 mb-4">
@@ -213,7 +213,8 @@ function Webdevelopment() {
                         {/* Ultimate Combination Section */}
                         <section className="mb-8">
                             <div className="max-w-7xl mx-auto">
-                                <div className="p-6 bg-blue-100 shadow-lg rounded-lg flex flex-col md:flex-row items-center" data-aos="fade-up" data-aos-delay="100">
+
+                                <div className="p-6 bg-blue-100 shadow-lg rounded-lg flex flex-col md:flex-row items-stretch" data-aos="fade-up" data-aos-delay="100">
                                     <img src={devsub3} alt="Design And Technology" className="w-full md:w-1/3 rounded-lg mb-4 md:mb-0 md:mr-6" />
                                     <div>
                                         <h2 className="text-4xl font-bold text-center md:text-left text-blue-800 mb-4">
@@ -238,7 +239,7 @@ function Webdevelopment() {
 
                         <section className="mb-8">
                             <div className="max-w-7xl mx-auto">
-                                <div className="p-6 bg-red-100 shadow-lg rounded-lg flex flex-col md:flex-row items-center" data-aos="fade-up" data-aos-delay="100">
+                                <div className="p-6 bg-red-100 shadow-lg rounded-lg flex flex-col md:flex-row items-stretch" data-aos="fade-up" data-aos-delay="100">
                                     <img src={devsub4} alt="Design And Technology" className="w-full md:w-1/3 rounded-lg mb-4 md:mb-0 md:mr-6" />
                                     <div>
                                         <h2 className="text-4xl font-bold text-center md:text-left text-red-800 mb-4">

@@ -30,6 +30,7 @@ function Blog() {
         const allBlogs = response.data;
         const publishedBlogs = allBlogs.filter(blog => blog.publish); // Filter published blogs
         setBlogs(publishedBlogs);
+        console.log(publishedBlogs)
       } catch (error) {
         console.error('Error fetching blogs:', error);
       }
