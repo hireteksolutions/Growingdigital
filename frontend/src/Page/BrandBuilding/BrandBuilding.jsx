@@ -34,10 +34,10 @@ function BrandBuilding() {
             </header>
 
             <div className={style.heading}>
-                <h1 className={style.title}>
+                <h1 className={`${style.title} uppercase`}>
                     Brand Building Beyond Boundaries: Elevating Reputations
                 </h1>
-                <p className={`${style.subtitle} `}>
+                <p className={`uppercase ${style.subtitle} `}>
                     Service » Brand Building Beyond Boundaries
                 </p>
             </div>

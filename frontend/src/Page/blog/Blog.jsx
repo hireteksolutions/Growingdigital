@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, lazy, Suspense } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Navbar from '../../Component/Navbar/Navbar';
@@ -6,14 +6,15 @@ import Footer from '../../Component/Footer/Footer';
 import style from './Blog.module.css';
 import Aos from "aos";
 import "aos/dist/aos.css";
-
 import { Helmet } from 'react-helmet';
 import { FaAngleDoubleLeft } from "react-icons/fa";
 import { FaAnglesRight } from "react-icons/fa6";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 
 function Blog() {
-
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -22,19 +23,19 @@ function Blog() {
   const [currentPage, setCurrentPage] = useState(1);
   const blogsPerPage = 6;
 
-
   useEffect(() => {
-    // Fetch blogs from backend
-    axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/blog`)
-      .then(response => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/blog`);
         const allBlogs = response.data;
         const publishedBlogs = allBlogs.filter(blog => blog.publish); // Filter published blogs
         setBlogs(publishedBlogs);
-        console.log('publishedBlogs', publishedBlogs);
-      })
-      .catch(error => {
+      } catch (error) {
         console.error('Error fetching blogs:', error);
-      });
+      }
+    };
+
+    fetchBlogs();
   }, []);
 
   // Get current blogs
@@ -152,7 +153,11 @@ function Blog() {
         {currentBlogs.map(blog => (
           <section data-aos="fade-up" key={blog.blogId} className={style.Blog}>
             <div className={style.one}>
-              <img src={blog.mediaUrl} alt={blog.title} />
+              <LazyLoadImage
+                src={blog.mediaUrl}
+                alt={blog.title}
+                effect="blur"
+              />
               <div className={style['title-overlay']}>
                 <h2>{blog.title}</h2>
               </div>
@@ -170,7 +175,7 @@ function Blog() {
           {renderPaginationButtons()}
         </nav>
       </main>
-      
+
       <Footer />
     </>
   );

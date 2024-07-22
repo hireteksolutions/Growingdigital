@@ -23,7 +23,7 @@ const links = [
     { url: '/contact-details', changefreq: 'weekly', priority: 0.8 },
     { url: '/blog/:slug', changefreq: 'weekly', priority: 0.8 },
     { url: '*', changefreq: 'weekly', priority: 0.5 },
-    // Add more URLs as needed
+
 ];
 
 // Create a sitemap stream and pipe it to a file

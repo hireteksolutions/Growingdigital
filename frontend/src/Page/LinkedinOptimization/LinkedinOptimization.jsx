@@ -34,10 +34,10 @@ function LinkedinOptimization() {
             </header>
 
             <div className={style.heading}>
-                <h1 className={style.title}>
+                <h1 className={`${style.title} uppercase`}>
                     LinkedIn Optimization For Success
                 </h1>
-                <p className={`${style.subtitle} `}>
+                <p className={`uppercase ${style.subtitle} `}>
                     Service » LinkedIn Optimization For Success
                 </p>
             </div>

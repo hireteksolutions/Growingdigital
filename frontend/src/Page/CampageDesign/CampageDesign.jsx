@@ -34,10 +34,10 @@ function CampageDesign() {
       </header>
 
       <div className={style.heading}>
-        <h1 className={style.title}>
+        <h1 className={`${style.title} uppercase`}>
           Content That Captivates: Elevating Your Digital Presence
         </h1>
-        <p  className={`${style.subtitle}`}>
+        <p  className={`uppercase ${style.subtitle}`}>
           Service » Content That Captivates: Elevating Your Digital Presence
         </p>
       </div>

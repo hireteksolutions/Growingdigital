@@ -44,10 +44,10 @@ function SEO() {
             </header>
 
             <div className={style.heading}>
-                <h1 className={style.title}>
+                <h1 className={`${style.title} uppercase`}>
                     Growing Digital Best SEO  services in Delhi
                 </h1>
-                <p className={`${style.subtitle}`}>
+                <p className={`uppercase ${style.subtitle}`}>
                     Service » Growing Digital Best SEO services in Delhi
                 </p>
             </div>
@@ -55,15 +55,17 @@ function SEO() {
             <div className={style.content}>
                 <div className={style.box}>
                     <p className={style.p}>
-                        Search Engine Optimization (SEO) represents a meticulous discipline that is pivotal to the overarching digital marketing strategy of a business. Its significance transcends industry, size, and niche, enabling businesses to establish a robust and credible online presence. SEO agencies are dedicated to enhancing a business's website's visibility on search engines by optimizing various technical aspects, such as keywords, content, and links. Their primary objective is to guarantee that businesses remain pertinent in search engine results, whether accessed through web or mobile browsers. These agencies provide a range of services, including audience targeting, SEO reporting, and improvements in Search Engine Result Pages (SERP) rankings. Engaging the services of a specialized SEO agency represents a wise investment for a business's immediate and long-term success. Businesses that implement effective SEO strategies gain a competitive edge over their counterparts lacking such efforts, ensuring their visibility and relevance in the digital landscape
+                        Search Engine Optimization (SEO) represents a meticulous discipline that is pivotal to the overarching digital marketing strategy of a business. Its significance transcends industry, size, and niche, enabling businesses to establish a robust and credible online presence. SEO agencies are dedicated to enhancing a business's website's visibility on search engines by optimizing various technical aspects, such as keywords, content, and links. Their primary objective is to guarantee that businesses remain pertinent in search engine results, whether accessed through web or mobile browsers. These agencies provide a range of services, including audience targeting, SEO reporting, and improvements in Search Engine Result Pages (SERP) rankings. Engaging the services of a specialized SEO agency represents a wise investment for a business's immediate and long-term success. Businesses that implement effective SEO strategies gain a competitive edge over their counterparts lacking such efforts, ensuring their visibility and relevance in the digital landscape.
                     </p>
 
-                    <h2 className={`${style.sectionTitle} ${style.greenText}`}>
-                        About our Growing Digital SEO services.
+                    <h2 className={`uppercase ${style.sectionTitle} ${style.greenText}`}>
+                        About Growing Digital SEO Services.
                     </h2>
 
                     <p className={style.p}>
-                        If consistency is your goal, then Growing Digital is the place. Indeed, at Growing Digital, providing the <strong> best SEO services in Delhi </strong> and being on the top of the search list is our prime objective be it for ourselves or our clients we ensure the search begins with us. You can always find us on top of the search page while you look for the best Seo services in Delhi, our digital marketing skills enable our customers to ensure the top spot- this can be the best thing for our customers. We ardently stick to Google Webmaster's guidelines by following only White Hat Techniques and providing the best SEO services in Delhi. Our team of SEO experts are hand-picked in the industry. Our team performs a thorough analysis and shortlists the best techniques that are customized for your needs.
+                        If consistency is your goal, then Growing Digital is the place for you. At Growing Digital, providing the best SEO services and being at the top of search lists is our prime objective. Whether for ourselves or our clients, we ensure the search begins with us. You can always find us at the top of the search page when looking for the best SEO services. Our digital marketing skills enable our customers to secure the top spot, which is the best thing for our clients.
+                        We ardently adhere to Google Webmaster's guidelines, following only White Hat Techniques to provide the best SEO services. Our team of SEO experts is hand-picked from the industry. They perform thorough analyses and shortlist the best techniques customized to your needs.
+
                     </p>
 
                     <div className={style.content2}>
@@ -143,7 +145,7 @@ function SEO() {
 
                     <div className="flex items-center justify-center mt-[2em] mb-[2em] text-2xl">
                         <strong className="text-center">
-                            SEO creates a huge impact on your company’s goals be it leads or boost traffic or visibility. Here are best biggest benefits you can get from best SEO company in Delhi.
+                            SEO creates a huge impact on your company’s goals be it leads or boost traffic or visibility. Here are best biggest benefits you can get from best SEO company.
                         </strong>
                     </div>
 
@@ -158,12 +160,14 @@ function SEO() {
                         </div>
                         <div class="flex-1 bg-white shadow-md rounded-lg p-6" data-aos="fade-up" data-aos-delay="100">
                             <p class="text-2xl text-center text-gray-800">
-                                Top SEO firms in Delhi implement SEO that drives customer-centric attraction and with its reviews and user-uploaded data it brings in organic customers. This gives you an upper edge, as they are intently looking to purchase or contract this service. This automatically increases your chances to market your services or goods or convert them into sales or leads!
+                                We implement top SEO strategies that drive customer-centric attraction. Through reviews and user-uploaded data, we bring in organic customers. This gives you an upper edge, as these customers are actively looking to purchase or contract your services. This automatically increases your chances of marketing your services or goods and converting leads into sales!
                             </p>
                         </div>
                         <div class="flex-1 bg-white shadow-md rounded-lg p-6" data-aos="fade-up" data-aos-delay="200">
                             <p class="text-2xl text-center text-gray-800">
-                                SEO is an investment in which you reap endless benefits and does not cost a fortune at once like ads. Yes, it is continual progress in your profits. Best SEO companies in Delhi ensure high-quality content that the search engine finds to be the best result for any query. It is based on Google’s algorithm to provide a ranking that suits best.
+                                SEO is an investment in which you reap endless benefits and does not cost a fortune at once like ads. Yes, it is continual progress in your profits. Best SEO companies in
+                                ensure high-quality content that the search engine finds to be the best result for any query. It is based on Google’s algorithm to provide a ranking that suits best.
+
                             </p>
                         </div>
                     </div>

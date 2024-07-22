@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, startTransition } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -6,9 +6,7 @@ import LoginModal from '../Login/Login'; // Import the LoginModal component
 import logo from '../../Assets/logo.png';
 import Sidebar from '../Sidebar/Sidebar'; // Import the Sidebar component
 import { RxHamburgerMenu } from "react-icons/rx";
-
-import whatsapp from '../../Assets/whatsapp.png'
-
+import whatsapp from '../../Assets/whatsapp.png';
 import style from './Navbar.module.css';
 
 function Navbar() {
@@ -60,36 +58,42 @@ function Navbar() {
   const handleItemClick = (index) => {
     setActiveIndex(index); // Always set active index on click
 
-    switch (index) {
-      case 0:
-        navigate('/');
-        break;
-      case 1:
-        navigate('/about');
-        break;
-      case 2:
-        navigate('/Service');
-        break;
-      case 3:
-        navigate('/partner');
-        break;
-      case 4:
-        navigate('/blog');
-        break;
-      case 5:
-        navigate('/contact');
-        break;
-      default:
-        break;
-    }
+    startTransition(() => {
+      switch (index) {
+        case 0:
+          navigate('/');
+          break;
+        case 1:
+          navigate('/about');
+          break;
+        case 2:
+          navigate('/Service');
+          break;
+        case 3:
+          navigate('/partner');
+          break;
+        case 4:
+          navigate('/blog');
+          break;
+        case 5:
+          navigate('/contact');
+          break;
+        default:
+          break;
+      }
+    });
   };
 
   const toggleModal = () => {
-    setShowModal(!showModal);
+    startTransition(() => {
+      setShowModal((prevShowModal) => !prevShowModal);
+    });
   };
 
   const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
+    startTransition(() => {
+      setIsSidebarOpen((prevIsSidebarOpen) => !prevIsSidebarOpen);
+    });
   };
 
   return (

@@ -32,10 +32,10 @@ function DesignService() {
             </header>
 
             <div className={style.heading}>
-                <h1 className={style.title}>
+                <h1 className={`uppercase ${style.title}`}>
                     Design-as-a-Service: Crafting Your Career Success
                 </h1>
-                <p className={`${style.subtitle} `}>
+                <p className={`uppercase ${style.subtitle} `}>
                     Service » Design-as-a-Service
                 </p>
             </div>
