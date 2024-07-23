@@ -4,11 +4,12 @@
 }
 
 .heading h1 {
-    font-size: 4vw;
-    text-align: center;
-    font-weight: 100;
-    line-height: 2;
     color: #212934;
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: normal;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .heading p {

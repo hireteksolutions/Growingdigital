@@ -83,11 +83,11 @@ function SEO() {
                         </div>
                     </div>
 
-                    <h2 className={`${style.sectionTitle} ${style.greenText} text-center`}>
+                    <h2 className={`${style.sectionTitle} ${style.greenText}`}>
                         Our SEO Work Includes
                     </h2>
 
-                    <p className={`${style.p}  text-center`}>
+                    <p className={`${style.p}`}>
                         With a dedicated team of professionals, we ensure 360-degree solutions to our valuable clients through our bespoke, industry-focused, and cost-efficient SEO services. The following is included in our SEO work:
                     </p>
 
@@ -143,8 +143,8 @@ function SEO() {
 
                     </div>
 
-                    <div className="flex items-center justify-center mt-[2em] mb-[2em] text-2xl">
-                        <strong className="text-center">
+                    <div className="flex items-center justify-center mt-[2em] mb-[2em] text-3xl">
+                        <strong style={{color:'#004c4c'}}>
                             SEO creates a huge impact on your company’s goals be it leads or boost traffic or visibility. Here are best biggest benefits you can get from best SEO company.
                         </strong>
                     </div>

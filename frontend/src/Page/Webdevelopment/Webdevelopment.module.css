@@ -13,7 +13,7 @@
 .title {
     font-size: 3.5vw;
     font-weight: 600;
-    color: #212934;
+    color: #004c4c;
     line-height: 1.4;
 }
 
@@ -46,11 +46,11 @@
     font-weight: 600;
     margin-top: 2em;
     margin-bottom: 1em;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .greenText {
-    color: #004c4c;
+    color: #1abd1a;
 }
 
 .content2 {

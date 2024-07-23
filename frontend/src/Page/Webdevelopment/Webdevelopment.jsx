@@ -26,9 +26,9 @@ function Webdevelopment() {
     return (
         <>
             <Helmet>
-                <title>WEB DEVELOPMENT COMPANY IN DELHI</title>
+                <title>GROWING DIGITAL WEB DEVELOPMENT SERVICES</title>
                 <meta name="description" content="Explore the importance of integrating brand values into web development and its impact on audience engagement and loyalty." />
-                <meta property="og:title" content="WEB DEVELOPMENT COMPANY IN DELHI" />
+                <meta property="og:title" content="GROWING DIGITAL WEB DEVELOPMENT SERVICES" />
                 <meta property="og:description" content="Discover why integrating brand values into web development is crucial for fostering authenticity, building trust, and cultivating meaningful connections with audiences." />
                 <meta property="og:type" content="article" />
                 <link rel="canonical" href="https://www.growingdigital.in/web-development" />
@@ -40,7 +40,7 @@ function Webdevelopment() {
 
             <div className={style.heading}>
                 <h1 className={style.title}>
-                    WEB DEVELOPMENT COMPANY IN DELHI
+                    GROWING DIGITAL WEB DEVELOPMENT SERVICES
                 </h1>
                 <p className={`uppercase ${style.subtitle}`}>
                     Service » WEB DEVELOPMENT COMPANY IN DELHI
@@ -95,7 +95,7 @@ function Webdevelopment() {
                                 <div>
                                     <h3 className="text-xl font-bold text-gray-800">Dedicated Team of Experts</h3>
                                     <p className="text-gray-700">
-                                        Our team comprises talented web developers in    who are passionate about their craft. They bring creativity, innovation, and technical prowess to every project.
+                                        Our team comprises talented web developers in who are passionate about their craft. They bring creativity, innovation, and technical prowess to every project.
                                     </p>
                                 </div>
                             </li>

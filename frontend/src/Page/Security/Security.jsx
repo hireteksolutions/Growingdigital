@@ -60,15 +60,9 @@ function Security() {
                         From concept to launch, we create dynamic, responsive websites that captivate and convert. Our expert team ensures your online presence is visually stunning and functionally flawless, using the latest technologies for seamless user experiences. Transform your ideas into reality with our comprehensive web development services, empowering your brand and elevating your digital strategy.
                     </p>
 
-                    <div onClick={() => { navigate('/web-development') }} className={style.containerButton}>
-                        <div className={`${style.hover} ${style.bt1} `}></div>
-                        <div className={`${style.hover} ${style.bt2}`}></div>
-                        <div className={`${style.hover} ${style.bt3}`}></div>
-                        <div className={`${style.hover} ${style.bt4}`}></div>
-                        <div className={`${style.hover} ${style.bt5}`}></div>
-                        <div className={`${style.hover} ${style.bt6}`}></div>
-                        <button className={style.btn}></button>
-                    </div>
+
+                    <button onClick={() => { navigate('/web-development') }} className={style.btn}>Explore</button>
+
 
                 </div>
             </section>
@@ -93,16 +87,7 @@ function Security() {
                         you reach the top of the search results.
                     </p>
 
-                    <div onClick={() => { navigate('/seo-alchemy') }} className={style.containerButton}>
-                        <div className={`${style.hover} ${style.bt1} `}></div>
-                        <div className={`${style.hover} ${style.bt2}`}></div>
-                        <div className={`${style.hover} ${style.bt3}`}></div>
-                        <div className={`${style.hover} ${style.bt4}`}></div>
-                        <div className={`${style.hover} ${style.bt5}`}></div>
-                        <div className={`${style.hover} ${style.bt6}`}></div>
-                        <button className={style.btn}></button>
-                    </div>
-
+                    <button onClick={() => { navigate('/seo-alchemy') }} className={style.btn}>Explore</button>
 
                 </div>
 
@@ -137,15 +122,8 @@ function Security() {
                         audience engaged.
                     </p>
 
-                    <div onClick={() => { navigate('/campage-design') }} className={style.containerButton}>
-                        <div className={`${style.hover} ${style.bt1} `}></div>
-                        <div className={`${style.hover} ${style.bt2}`}></div>
-                        <div className={`${style.hover} ${style.bt3}`}></div>
-                        <div className={`${style.hover} ${style.bt4}`}></div>
-                        <div className={`${style.hover} ${style.bt5}`}></div>
-                        <div className={`${style.hover} ${style.bt6}`}></div>
-                        <button className={style.btn}></button>
-                    </div>
+
+                    {/* <button onClick={() => { navigate('/campage-design') }} className={style.btn}>Explore</button> */}
 
                 </div>
             </section>
@@ -169,15 +147,7 @@ function Security() {
                         management are our specialties.
                     </p>
 
-                    <div onClick={() => { navigate('/social-media') }} className={style.containerButton}>
-                        <div className={`${style.hover} ${style.bt1} `}></div>
-                        <div className={`${style.hover} ${style.bt2}`}></div>
-                        <div className={`${style.hover} ${style.bt3}`}></div>
-                        <div className={`${style.hover} ${style.bt4}`}></div>
-                        <div className={`${style.hover} ${style.bt5}`}></div>
-                        <div className={`${style.hover} ${style.bt6}`}></div>
-                        <button className={style.btn}></button>
-                    </div>
+                    <button onClick={() => { navigate('/social-media') }}  className={style.btn}>Explore</button>
 
                 </div>
 
@@ -214,15 +184,7 @@ function Security() {
                         Brilliance.
                     </p>
 
-                    <div onClick={() => { navigate('/linkedin-optimization') }} className={style.containerButton}>
-                        <div className={`${style.hover} ${style.bt1} `}></div>
-                        <div className={`${style.hover} ${style.bt2}`}></div>
-                        <div className={`${style.hover} ${style.bt3}`}></div>
-                        <div className={`${style.hover} ${style.bt4}`}></div>
-                        <div className={`${style.hover} ${style.bt5}`}></div>
-                        <div className={`${style.hover} ${style.bt6}`}></div>
-                        <button className={style.btn}></button>
-                    </div>
+                    {/* <button onClick={() => { navigate('/linkedin-optimization') }}  className={style.btn}>Explore</button> */}
 
                 </div>
             </section>
@@ -230,7 +192,7 @@ function Security() {
 
             <section className={style.alt}>
 
-                <div data-aos="fade-down"  className={style.content}>
+                <div data-aos="fade-down" className={style.content}>
                     <h1 className='uppercase'>
                         Design-As-A-Service
                     </h1>
@@ -239,30 +201,23 @@ function Security() {
                     </h2>
 
                     <p>
-                        Our DaaS services redefine your digital presence.
+                        Our DaaS services redefine your digital presence
                     </p>
                     <p>
-                        presence Online Reputation Management.
+                        presence Online Reputation Management
                     </p>
                     <p>
-                        Social Media Domination.
+                        Social Media Domination
                     </p>
                     <p>
-                        SEO Mastery.
+                        SEO Mastery
                     </p>
                     <p>
-                        Content Creation Expertise.
+                        Content Creation Expertise
                     </p>
 
-                    <div onClick={() => { navigate('/design-service') }} className={style.containerButton}>
-                        <div className={`${style.hover} ${style.bt1} `}></div>
-                        <div className={`${style.hover} ${style.bt2}`}></div>
-                        <div className={`${style.hover} ${style.bt3}`}></div>
-                        <div className={`${style.hover} ${style.bt4}`}></div>
-                        <div className={`${style.hover} ${style.bt5}`}></div>
-                        <div className={`${style.hover} ${style.bt6}`}></div>
-                        <button className={style.btn}></button>
-                    </div>
+
+                    {/* <button onClick={() => { navigate('/design-service') }}  className={style.btn}>Explore</button> */}
 
                 </div>
 
@@ -299,16 +254,7 @@ function Security() {
                         recognition and resonance.
                     </p>
 
-
-                    <div onClick={() => { navigate('/brand-building') }} className={style.containerButton}>
-                        <div className={`${style.hover} ${style.bt1} `}></div>
-                        <div className={`${style.hover} ${style.bt2}`}></div>
-                        <div className={`${style.hover} ${style.bt3}`}></div>
-                        <div className={`${style.hover} ${style.bt4}`}></div>
-                        <div className={`${style.hover} ${style.bt5}`}></div>
-                        <div className={`${style.hover} ${style.bt6}`}></div>
-                        <button className={style.btn}></button>
-                    </div>
+                    {/* <button onClick={() => { navigate('/brand-building') }}  className={style.btn}>Explore</button> */}
 
                 </div>
             </section>

@@ -20,9 +20,9 @@ function SocialMedia() {
   return (
     <>
       <Helmet>
-        <title>Social Media Marketing Agency In Delhi.</title>
+        <title>Growing Digital Social Media Marketing Agency</title>
         <meta name="description" content="Discover the transformative power of social media marketing in engaging your audience and driving brand awareness." />
-        <meta property="og:title" content="Social Media Marketing Agency In Delhi." />
+        <meta property="og:title" content="Growing Digital Social Media Marketing Agency" />
         <meta property="og:description" content="Learn how expert social media strategies can enhance your brand's visibility and audience engagement on platforms like Facebook, Instagram, Twitter, and LinkedIn." />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://www.growingdigital.in/social-media-marketing" />
@@ -34,10 +34,11 @@ function SocialMedia() {
 
       <div className={style.heading}>
         <h1 className={`uppercase ${style.title}`}>
-          Social Media Marketing Agency In Delhi.
+          Growing Digital Social Media Marketing Agency
         </h1>
-        <p className={ ` uppercase ${style.subtitle}`}>
-          Service » Social Media Marketing Agency In Delhi.
+
+        <p className={` uppercase ${style.subtitle}`}>
+          Service » Growing Digital Social Media Marketing Agency
         </p>
       </div>
 
@@ -45,10 +46,9 @@ function SocialMedia() {
 
       <div className={style.content}>
         <div className={style.box}>
-
-
+          
           <h2 className={`uppercase	 ${style.sectionTitle} ${style.greenText}`}>
-            Grow your business by acquiring Growing Digital.
+            Grow your business by acquiring Growing Digital
           </h2>
 
           <p className={style.p}>
@@ -56,7 +56,7 @@ function SocialMedia() {
           </p>
 
           <h2 className={`${style.sectionTitle} ${style.greenText}`}>
-            WHAT IS SOCIAL MEDIA MARKETING
+            WHAT IS SOCIAL MEDIA MARKETING ?
           </h2>
 
           <p className={style.p}>
@@ -87,10 +87,6 @@ function SocialMedia() {
             The process begins with crafting outstanding and influential content for social media platforms, engaging with and comprehending your audience, evaluating outcomes, and executing social media ads. Growing Digital Agency produces engaging content, boosts your brand visibility, oversees all communications across social media platforms, ensuring the outcomes you desire. We offer a variety of services in social media marketing that can be tailored to fit your requirements. Whether your goal is to establish a brand and manage it effectively, or to attract customers and expand your business from the ground up, Growing Digital the social media agency is here to assist you. At Growing Digital, we develop effective strategies using tried-and-true methodologies and recommend the most appropriate social media platforms for your needs. Although organic social media strategies, known for their slower but more personal approach, are trusted, paid ads offer a more impactful and commercial strategy.
           </p>
 
-          <h2 className={`${style.sectionTitle} ${style.greenText}`}>
-            SOCIAL MEDIA MARKETING IN DELHI.
-          </h2>
-
           <h3 className={`${style.h3} ${style.greenText}`}>
             What is your purpose or goal?
           </h3>
@@ -115,7 +111,7 @@ function SocialMedia() {
             Choose a content that gains the attention of your audience in the best way. Do you choose videos, images or links? Are you planning to promote entertaining content or informative content? All of these elements put together in your marketing strategy enable social media.
           </p>
           <h3 className={`${style.h3} ${style.greenText}`}>
-            Social Media Presence for B2B customers
+            Social Media Presence for B2B customers 
           </h3>
 
           <p className={style.p}>
@@ -159,7 +155,7 @@ function SocialMedia() {
 
           <ul class="list-disc ml-6 md:text-2xl text-xl text-gray-800">
             <li class="mb-6">
-              <strong>Facebook:</strong>: Always known as the king of social media marketing services has a wide reach and a truly global network. This makes it a prime channel for business.
+              <strong>Facebook:</strong> Always known as the king of social media marketing services has a wide reach and a truly global network. This makes it a prime channel for business.
             </li>
             <li class="mb-6">
               <strong>Instagram:</strong> spruces a dash of inspiration on daily life.Yet more than 80 percent visit business profiles!
@@ -174,7 +170,7 @@ function SocialMedia() {
               <strong>LinkedIn:</strong> The most widely used professional social media platform. If you are a working professional and not here- then there must be something wrong!
             </li>
             <li class="mb-6">
-              <strong>Snapchat:</strong> : We also work on Snapchat and customize social media strategies for our clients based on the requirements. Call us now to find out which platform suits you the best! Or fill the form below and we will call you back.
+              <strong>Snapchat:</strong> We also work on Snapchat and customize social media strategies for our clients based on the requirements. Call us now to find out which platform suits you the best! Or fill the form below and we will call you back.
             </li>
           </ul>
 
@@ -186,55 +182,55 @@ function SocialMedia() {
             Most social media platforms offer advertising options. Deciding which platforms to use and selecting the appropriate social media marketing services reach your target audience can be a daunting task. When deciding on the social networks for advertising, it's advisable to look for those that rank well organically. Social media platforms where your content or product naturally resonates with its audience are a clear choice for launching your initial social ad campaigns. When it comes to choosing the social media platforms for ad placement, it's also beneficial to understand which networks are most popular among your target demographic. For instance, Facebook attracts a broader age range and gender distribution, whereas Pinterest boasts a significantly higher number of female users than male. If your target audience is younger, platforms like Snapchat and Instagram are likely to be more effective. At Growing Digital, our leading social media agency in Delhi, we have meticulously analyzed, validated, and narrowed down the most effective strategies for enhancing your social media presence.
           </p>
 
-          <div class="py-12 bg-gray-100">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-6">
+          <div className="py-12 bg-gray-100">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className={`${style.greenText} text-3xl font-extrabold text-gray-900 sm:text-4xl mb-6`}>
                 Facebook Ads by Growing Digital Agency
               </h2>
-              <p class="text-xl text-gray-700 mb-8">
+              <p className="text-xl text-gray-700 mb-8">
                 Facebook ads designed by Growing Digital help you achieve one of three broad types of SMM services:
               </p>
 
-              <ul class="list-disc ml-6 text-xl text-gray-800 mb-8">
-                <li class="mb-4">
-                  Create Awareness: Building brand awareness or increasing the reach of the brand among an audience.
+              <ul className="list-disc ml-6 text-xl text-gray-800 mb-8">
+                <li className="mb-4">
+                  <strong> Create Awareness: </strong> Building brand awareness or increasing the reach of the brand among an audience.
                 </li>
-                <li class="mb-4">
-                  Grab attention: invite traffic to your website, increase engagement, encourage app downloads or views, generate leads, and promote people to communicate with you on Facebook Messenger.
+                <li className="mb-4">
+                  <strong>  Grab attention: </strong> invite traffic to your website, increase engagement, encourage app downloads or views, generate leads, and promote people to communicate with you on Facebook Messenger.
                 </li>
-                <li class="mb-4">
-                  Call to Action/Conversion: Create online conversions, make the online catalog available and drive foot traffic to offline stores.
+                <li className="mb-4">
+                  <strong> Call to Action/Conversion: </strong> Create online conversions, make the online catalog available and drive foot traffic to offline stores.
                 </li>
               </ul>
 
-              <p class="text-lg text-gray-700 mb-8">
+              <p className="text-lg text-gray-700 mb-8">
                 <strong>Growing Digital Advice:</strong>
                 Facebook is very popular in a wider audience and across demographics hence offering detailed targeting options. This makes it a great platform to get started with social media advertising for any product or service.
               </p>
 
-              <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-6">
+              <h2 className={`text-3xl font-extrabold text-gray-900 sm:text-4xl mb-6 ${style.greenText}`}>
                 Instagram ads by Growing Digital
               </h2>
-              <p class="text-xl text-gray-700 mb-8">
+              <p className="text-xl text-gray-700 mb-8">
                 Facebook owns yet another high-influence social media platform i.e., Instagram. So it’s not unexpected that Instagram ads support the same three broad categories of social media's campaign objectives as Facebook ads:
               </p>
 
-              <ul class="list-disc ml-6 text-xl text-gray-800 mb-8">
-                <li class="mb-4">Create Awareness</li>
-                <li class="mb-4">Grab the attention</li>
-                <li class="mb-4">Creating Conversion</li>
+              <ul className="list-disc ml-6 text-xl text-gray-800 mb-8">
+                <li className="mb-4">Create Awareness</li>
+                <li className="mb-4">Grab the attention</li>
+                <li className="mb-4">Creating Conversion</li>
               </ul>
 
-              <p class="text-lg text-gray-700 mb-8">
+              <p className="text-lg text-gray-700 mb-8">
                 <strong>Growing Digital Advice:</strong>Instagram is very popular with young age millennials. Plenty of Generation next users binge on this platform.
               </p>
 
-              <div class="text-xl text-gray-700 mb-8">
-                <strong>Ad Tips for Social Media Marketing:</strong>
+              <div className="text-xl text-gray-700 mb-8">
+                <strong>Ad Tips for Social Media Marketing</strong>
                 <p>
                   Ads across social media are in the form of auctions- yes there are ads for just INR.1 to more than a lakh. You get to set a maximum bid amount for a target result (eg: a click), or you can also set a maximum budget per day. To maximize your results via social media marketing you need to set goals before beginning the Ads campaign. Depending on your campaign goal you will have to choose the below:
                 </p>
-                <ul class="list-disc ml-6">
+                <ul className="list-disc ml-6">
                   <li>Cost per click or (CPC)</li>
                   <li>Cost per 1000 impression(CPM)</li>
                   <li>Cost per conversion</li>
@@ -246,10 +242,11 @@ function SocialMedia() {
                 </p>
               </div>
 
-              <p class="text-lg text-gray-700">
+              <p className="text-lg text-gray-700">
                 Call us now for a free site audit and social media plans!!
               </p>
-              <p class="text-lg text-gray-700">
+              <br />
+              <p className="text-lg text-gray-700">
                 We can give you insights into your social media options and in turn the best value for your Advertising money! With our expertise and dedicated team of Digital Marketing professionals, your social media issues are indeed sorted
               </p>
             </div>
